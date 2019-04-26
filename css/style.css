@@ -1,0 +1,129 @@
+/* 
+#5BC8AC  -   turqoise
+#98DBC6  -  aquamarine
+#E6D72A  -  canary yellow
+#F18D9E  -  pink tulip
+*/
+
+#mainNavBar {
+    background-color: #5BC8AC;
+}
+
+#navbarBtn {
+    background-color: #F18D9E;
+}
+
+#navbarBtn:hover {
+    box-shadow: 2px 5px 20px #E6D72A;
+}
+
+.logo {
+    /* font-family: 'Dancing Script', cursive; */
+    font-family: 'Courgette', cursive;
+    font-size: 21px;
+    word-spacing: 10px;
+}
+
+.logo:hover {
+    text-shadow: 2px 5px 20px #E6D72A;
+}
+
+.navbarLink {
+    transition: all .4s;
+}
+
+.navbarLink:hover {
+    background-color: #F18D9E;
+    border-radius: 5px;
+}
+
+.dropdown:hover>.dropdown-menu {
+    display: block;
+}
+
+.pinkTulip {
+    color: #F18D9E;
+}
+
+.canaryYellow {
+    color: #E6D72A;
+}
+
+.turqoise {
+    background-color: #5BC8AC;
+}
+
+.aquamarine {
+    background-color: #98DBC6;
+}
+
+#carousel {
+    margin-top:58px;
+}
+
+.laBelle {
+    /* font-family: 'Dancing Script', cursive; */
+    font-family: 'Courgette', cursive;
+}
+
+.textShadow {
+    text-shadow: 5px 2px 15px black;
+}
+
+.borderBottom {
+    border-bottom: 1px solid #E6D72A;
+}
+
+.hide {
+    display: none;
+}
+
+.red {
+    color: red;
+}
+
+.modal-body {
+    height: 50vh;
+}
+
+.table {
+    width: 60%;
+    margin: 120px auto 50px auto;
+    opacity: 0.9;
+}
+
+#backgroundTable {
+    background: url(../images/salon.jpg) no-repeat center center fixed;
+    background-size: cover;
+    border-bottom: 1px solid #E6D72A;
+}
+
+#thMain {
+    background-color: #F18D9E;
+    border-bottom: 3px #E6D72A solid;
+}
+
+th {
+    background-color: #98DBC6;
+    border-bottom: 1px #E6D72A solid;
+}
+
+.book {
+    text-decoration: none;
+    background-color: #F18D9E;
+    padding: 6px;
+    border-radius: 5px;
+}
+
+tr {
+    background-color: white;
+}
+
+tr:hover {
+    background-color: #E6D72A;
+
+}
+
+
+
+

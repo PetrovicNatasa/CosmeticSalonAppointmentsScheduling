@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <!-- fontawesome -->
+        <link rel="stylesheet" href="css/all.css">
+        <link href="fonts/dancingScript.css" rel="stylesheet">
+        <link href="fonts/courgette.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <title>La Belle</title>
+        <link rel="shortcut icon" type="image/png" href="images/beauty.png" />
+    </head>
+
+    <body>    
+        <nav id="mainNavBar" class="navbar navbar-expand-md navbar-dark fixed-top borderBottom">
+            <div class="navbar-header">
+                <a href="home.html" class="navbar-brand font-weight-bold m-0 text-light logo">
+                    salon lepote La<i class="fas fa-heart pinkTulip"></i>Belle
+                </a>
+            </div>
+            
+            <button id="navbarBtn" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div id="myNavbar" class="collapse navbar-collapse justify-content-end">
+                <ul class="nav navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-light font-weight-bold mr-1 navbarLink" href="home.html">HOME</a>
+                    </li>
+                    <li class="nav-item dropdown py-0">
+                        <a class="nav-link text-light font-weight-bold dropdown-toggle mr-1 navbarLink" href="cenovnik.html">
+                            CENOVNIK
+                        </a>
+                        <ul class="dropdown-menu py-0">
+                            <li>
+                                <a class="dropdown-item font-weight-bold aquamarine text-light navbarLink" href="cenovnik.html">ŠIŠANJE</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item font-weight-bold aquamarine text-light navbarLink" href="cenovnik.html#haircut">FARBANJE</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item font-weight-bold aquamarine text-light navbarLink" href="#">NEGA KOSE</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item font-weight-bold aquamarine text-light navbarLink" href="#">MANIKIR</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item font-weight-bold aquamarine text-light navbarLink" href="#">PEDIKIR</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item font-weight-bold aquamarine text-light navbarLink" href="cenovnik.html#makeUp">MAKE UP</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- <li class="nav=item">
+                                            <a class="nav-link text-light font-weight-bold mr-1 navbarLink" href="#">AKCIJA</a>
+                                        </li> -->
+                    <li class="nav=item">
+                        <a class="nav-link text-light font-weight-bold mr-1 navbarLink" href="gallery.html">GALERIJA</a>
+                    </li>
+                    <li class="nav=item">
+                        <a data-toggle="modal" data-target="#bookNow"
+                            class="nav-link text-light text-truncate font-weight-bold mr-1 book" href="#myModal">
+                            BOOK NOW
+                        </a>
+                    </li>
+                    <li class="nav=item">
+                        <a class="nav-link text-light font-weight-bold mr-1 navbarLink" href="#">KONTAKT</a>
+                    </li>
+                </ul>
+            
+            </div>
+
+        </nav>
+       
+        <header>
+            <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel" focus>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="images/carousel1.jpg">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="images/carousel2.jpg">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="images/carousel3.jpg">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            
+        </header>
+       
+        <section>
+            <div class="container-fluid borderBottom">
+                <div class="row">
+                    <div class="col text-center mb-3 mt-4">
+                        <h1 class="font-weight-bold display-4 text-muted laBelle">O nama</h1>
+                        <p class="lead text-secondary font-weight-bold laBelle"> Profesionalna usluga i maksimalna
+                            posvećenost </p>
+                    </div>
+                </div>
+
+                <div class="row text-center">
+                    <div class="col-lg-4 col-sm-10 mx-auto mb-5">
+                        <i class="fas fa-cut fa-6x pinkTulip textShadow mb-3"></i></i>
+                        <h1 class="text-secondary">Zašto <span class="laBelle">La</span><i
+                                class="fas fa-heart pinkTulip"></i><span class="laBelle">Belle</span>?</h1>
+                        <p class="text-muted my-4">Posetite salon <span class="laBelle">La</span><i
+                                class="fas fa-heart pinkTulip"></i><span class="laBelle">Belle</span>
+                            da bi sebi pružili užitak u pravom ambijentu. Dobićete vrhunski tretman. Ako želite da se
+                            osetite zadovoljno i
+                            promenite svoje navike koje Vam pružaju podstrek i mir nakon užurbane svakodnevnice, od nas
+                            ćete sigurno
+                            izaći nasmejani jer naš tim brine o Vama i tu je samo zbog Vas.
+                        </p>
+                    </div>
+                    <div class="col-lg-4 col-sm-10 mx-auto mb-5">
+                        <i class="fas fa-spray-can fa-6x pinkTulip textShadow mb-3"></i>
+                        <h1 class="text-secondary">Usluge</h1>
+                        <p class="text-muted my-4">
+                            Bavimo se stilizovanjem ženske kose, šišanjem i farbanjem, kozmetičarkim uslugama u vidu
+                            manikira i pedikira,
+                            a takođe i ulepšavanjem najsavremenijim make up tehnikama. Zadovoljstvo je biti deo Vaših
+                            najsrećnijih
+                            trenutaka u životu. Ponosni smo jer smo za kratko vreme uspeli da steknemo stalne klijente.
+                        </p>
+                    </div>
+                    <div class="col-lg-4 col-sm-10 mx-auto mb-5">
+                        <i class="fas fa-paint-brush fa-6x pinkTulip textShadow mb-3"></i>
+                        <h1 class="text-secondary">Radno vreme</h1>
+                        <p class="text-muted font-weight-bold mt-4 mb-0">Ponedeljak - Petak</p>
+                        <p class="text-muted">9h - 20h </p>
+                        <p class="text-muted font-weight-bold mb-0">Subota</p>
+                        <p class="text-muted">9h - 17h</p>
+                        <p class="text-muted font-weight-bold">Nedeljom na zakazivanje</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+       
+        <section class="p-5 aquamarine borderBottom">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col text-center mb-3">
+                        <h1 class="display-4 laBelle text-light font-weight-bold textShadow">Naš tim</h1>
+                        <p class="lead text-light laBelle font-weight-bold textShadow">
+                            Mlad i perspektivan, teži ka stalnom usavršavanju i napredovanju
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-3 col-sm-6">
+                        <img src="images/ana.jpg" class="img-thumbnail">
+                        <h2 class="text-light my-3 laBelle">frizer Ana</h2>
+                        <p class="text-muted"></p>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 mt-3">
+                        <img src="images/milica.jpg" class="img-thumbnail">
+                        <h2 class="text-light my-3 laBelle">frizer Milica</h2>
+                        <p class="text-muted"></p>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 mt-4">
+                        <img src="images/jelena.jpg" class="img-thumbnail">
+                        <h2 class="text-light my-3 laBelle">kozmetičar Jelena</h2>
+                        <p class="text-muted"></p>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 mt-5">
+                        <img src="images/nevena.jpg" class="img-thumbnail">
+                        <h2 class="text-light my-3 laBelle">šminker Nevena</h2>
+                        <p class="text-muted"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+       
+        <footer id="footer" class="turqoise">
+            <div class="container">
+                <div class="row">
+                    <div class="col text-center">
+                        <h1 class="text-light font-weight-light laBelle">salon lepote La<i class="fas fa-heart pinkTulip"></i>Belle</p>
+                        </h1>
+                        <h3 class="text-muted font-weight-light font-italic mb-3 laBelle">
+                            Posetite nas i uverite se u naš kvalitet!
+                        </h3>
+                        <div class="py-2">
+                            <a href="https://www.facebook.com/">
+                                <i class="fab fa-facebook fa-2x mx-3 text-primary"></i>
+                            </a>
+                            <a href="https://twitter.com/?lang=sr">
+                                <i class="fab fa-twitter fa-2x mx-3 text-info"></i>
+                            </a>
+                            <a href="https://www.youtube.com/">
+                                <i class="fab fa-youtube fa-2x mx-3 text-danger"></i>
+                            </a>
+                        </div>
+                        <p class="text-light py-4 m-0">
+                            <i class="far fa-copyright"></i>
+                            Copyright 2019 - made by <span class="laBelle">Nataša Petroivć</span>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </footer>
+        
+        
+        <div class="modal fade" id="bookNow">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header turqoise">
+                        <h4 class="modal-title">
+                            <a  href="home.html" class="navbar-brand font-weight-bold m-0 text-light laBelle logo">
+                                salon lepote La<i class="fas fa-heart pinkTulip"></i>Belle
+                            </a>
+                        </h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+        
+                    <div class="modal-body">
+                        <p id="successReg"></p>
+        
+                        <form id="loginForm">                        
+                            <label for="username">Username or email</label>
+                            <input id="usernameEmail" type="text" placeholder="Enter your username or email"> <br>
+                            <label for="password">Password</label>
+                            <input id="password" type="password" placeholder="Enter your password" required
+                                pattern="[a-zA-Z0-9]+"> <br>
+                            <button id="logInBtn" type="button">Log In</button>
+                            <button id="logOutBtn" type="button">Log Out</button> <br>
+                            <a href="#" id="registration">Register</a>
+                        </form>
+        
+                        <form id="registerForm" class="text-center hide">
+                            <label for="name">Name</label>
+                            <input id="name" type="text" placeholder="Enter your name" required> <br>
+                            <label for="surname">Surname</label>
+                            <input id="surname" type="text" placeholder="Enter your surname" required>
+                            <br>
+                            <label for="usernameReg">Username</label>
+                            <input id="usernameReg" type="text" placeholder="Enter your username" required> <br>
+                            <label for="mail">E mail</label>
+                            <input id="mail" type="email" placeholder="Enter your e-mail" required data-validation="email"> <br>
+                            <label for="passwordReg">Password</label>
+                            <input id="passwordReg" type="password" placeholder="Enter your password" required> <br>
+                            <label for="cPassword">Confirm Password</label>
+                            <input id="cPassword" type="password" placeholder="Enter your password" required> <br>
+                            <button id="registerBtn" type="submit">Register</button>
+                        </form>
+        
+                        <form id="actions" class="hide">
+                            <p class="signInClient"></p>
+                            <button type="button">ZAKAZANI TERMINI</button> <br>
+                            <button type="button">BOOK NOW</button> <br>
+                            <button type="button">LOG OUT</button> <br>
+                            <!-- na klik log out da se staviti modal - zelis da se odjavis? da ne -->
+                        </form>
+        
+                        <form class="hide">
+                            <p class="signInClient"></p>
+                            <label for="datePicker"></label>
+                            <input id="datePicker" class="far fa-calendar-alt" type="text">
+                            <!-- <i class="far fa-calendar-alt"></i>  --><br>
+                            <select>
+                                <option value="" disabled selected>Izaberite uslugu...</option>
+                                <optgroup label="ŠIŠANJE">
+                                    <option value="">ŽENSKO ŠIŠANJE</option>
+                                    <option value="">FENIRANJE</option>
+                                    <option value="">LOKNE SA PRESOM</option>
+                                    <option value="">SVEČANA FRIZURA</option>
+                                </optgroup>
+                                <optgroup label="FARBANJE">
+                                    <option value="">FARBANJE KORENA</option>
+                                    <option value="">FARBANJE CELE DUŽINE</option>
+                                    <option value="">PRAMENOVI</option>
+                                    <option value="">SOMBRE-OMBRE-BALAJAŽ</option>
+                                    <option value="">PRELIV</option>
+                                </optgroup>
+                                <optgroup label="NEGA KOSE">
+                                    <option value="">PAKOVANJE</option>
+                                    <option value="">OLAPLEX TRETMAN</option>
+                                    <option value="">KERATINSKI TRETMAN</option>
+                                </optgroup>
+                                <optgroup label="MANIKIR">
+                                    <option value="">TRAJNI LAK</option>
+                                    <option value="">OJAČAVANJE GELOM</option>
+                                    <option value="">IZLIVANJE GELOM</option>
+                                    <option value="">KOREKCIJA GELA</option>
+                                    <option value="">NAIL ART</option>
+                                </optgroup>
+                                <optgroup label="PEDIKIR">
+                                    <option value="">ESTETSKI PEDIKIR</option>
+                                    <option value="">MEDICINSKI PEDIKIR</option>
+                                    <option value="">TRAJNI LAK</option>
+                                    <option value="">OJAČAVANJE GELOM</option>
+                                    <option value="">KOREKCIJA</option>
+                                </optgroup>
+                                <optgroup label="MAKE UP">
+                                    <option value="">MAKE UP BEZ VEŠTAČKIH TREPAVICA</option>
+                                    <option value="">MAKE UP SA VEŠTAČKIM TREPAVICAMA</option>
+                                </optgroup>
+                            </select> <br>
+        
+                            <!-- biranje frizera, kozmeticara treba da bude disabled dok se ne izabere usluga!!! -->
+                            <select disabled>
+                                <option value="" disabled selected>Odaberite clana tima...</option>
+                                <option value="">Ana</option>
+                                <option value="">Milica</option>
+                                <option value="">Jelena</option>
+                                <option value="">Nevena</option>
+                            </select>
+                            
+                            <!-- dinamicka tabela gde ce se ispisivati usluge koje klijent bira, sa mogucnoscu da obrise uslugu -->
+                            <p id="table"></p>
+
+                            <button type="button">DODAJ USLUGU</button> <br>
+                            <button type="button">PRONAĐI TERMIN</button>
+
+
+                        </form>
+
+                        <form class="hide">
+                            <!-- kad se klikne 'PRONADJI TERMIN' -->
+                            <!-- treba da se pojavi kalendar sa slobodnim terminima -->
+                        </form>
+
+                        <form class="hide">
+                            <p id="choosenDate"></p>
+                            <div id="choosenServices"></div>
+                            <p id="total"></p>
+                            <button type="button">POTVRDI</button>
+                        </form>
+
+                        <form class="hide">
+                            <p>Vidimo se u salonu La Belle <span>neki datum</span></p>
+                            <div id="bookingTerms"></div>
+                            <!-- sa mogucnoscu da se izbrisu zakazani termini -->
+                        </form>
+                    </div>
+        
+                    <div class="modal-footer" class="hide">
+                        <button type="button" class="btn btn-outline-warning" data-dismiss="modal">Close</button>
+                    </div>
+        
+                </div>
+            </div>
+        </div>
+        
+
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/Client.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/sha512.min.js"></script>
+        
+    </body>
+
+</html>
