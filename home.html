@@ -218,8 +218,8 @@
         </footer>
         
         
-        <div class="modal fade" id="bookNow">
-            <div class="modal-dialog modal-lg">
+        <section class="modal fade" id="bookNow">
+            <div class="modal-dialog modal-md">
                 <div class="modal-content">
                     <div class="modal-header turqoise">
                         <h4 class="modal-title">
@@ -233,36 +233,57 @@
                     <div class="modal-body">
                         <p id="successReg"></p>
         
-                        <form id="loginForm">                        
-                            <label for="username">Username or email</label>
-                            <input id="usernameEmail" type="text" placeholder="Enter your username or email"> <br>
-                            <label for="password">Password</label>
-                            <input id="password" type="password" placeholder="Enter your password" required
-                                pattern="[a-zA-Z0-9]+"> <br>
-                            <button id="logInBtn" type="button">Log In</button>
-                            <button id="logOutBtn" type="button">Log Out</button> <br>
-                            <a href="#" id="registration">Register</a>
+                        <form id="loginForm">
+                            <div class="form-group">
+                                <label for="usernameEmail">Username or email</label>
+                                <input type="text" id="usernameEmail" class="form-control" placeholder="Enter your username or email"> <br>
+                            </div> 
+                            
+                            <div class="form-group">
+                                <label for="password">Password</label>
+                                <input type="password" id="password" class="form-control" placeholder="Enter your password" required pattern="[a-zA-Z0-9]+"> <br>
+                            </div>
+                            
+                            <div class="text-center">
+                                <a href="#" id="registration" class="text-center">Register</a>
+                            </div>                          
                         </form>
         
-                        <form id="registerForm" class="text-center hide">
-                            <label for="name">Name</label>
-                            <input id="name" type="text" placeholder="Enter your name" required> <br>
-                            <label for="surname">Surname</label>
-                            <input id="surname" type="text" placeholder="Enter your surname" required>
-                            <br>
-                            <label for="usernameReg">Username</label>
-                            <input id="usernameReg" type="text" placeholder="Enter your username" required> <br>
-                            <label for="mail">E mail</label>
-                            <input id="mail" type="email" placeholder="Enter your e-mail" required data-validation="email"> <br>
-                            <label for="passwordReg">Password</label>
-                            <input id="passwordReg" type="password" placeholder="Enter your password" required> <br>
-                            <label for="cPassword">Confirm Password</label>
-                            <input id="cPassword" type="password" placeholder="Enter your password" required> <br>
-                            <button id="registerBtn" type="submit">Register</button>
+                        <form id="registerForm" class="hide">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" class="form-control" placeholder="Enter your name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="surname">Surname</label>
+                                <input type="text" id="surname" class="form-control" placeholder="Enter your surname" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="usernameReg">Username</label>
+                                <input type="text" id="usernameReg" class="form-control" placeholder="Enter your username" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="mail">E mail</label>
+                                <input type="email" id="mail" class="form-control" placeholder="Enter your e-mail" required data-validation="email"> 
+                            </div>
+
+                            <div class="form-group">
+                                <label for="passwordReg">Password</label>
+                                <input type="password" id="passwordReg" class="form-control" placeholder="Enter your password" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="cPassword">Confirm Password</label>
+                                <input type="password" id="cPassword" class="form-control" placeholder="Enter your password" required>
+                            </div>
+
                         </form>
         
                         <form id="actions" class="hide">
-                            <p class="signInClient"></p>
+                            <p class="signInClient text-center"></p>
                             <button type="button">ZAKAZANI TERMINI</button> <br>
                             <button type="button">BOOK NOW</button> <br>
                             <button type="button">LOG OUT</button> <br>
@@ -351,13 +372,17 @@
                         </form>
                     </div>
         
-                    <div class="modal-footer" class="hide">
+                    <div class="modal-footer">
+                        <button type="button" id="logInBtn" class="btn btn-outline-warning">Log In</button>
+                        <button type="submit" id="registerBtn" class="btn btn-outline-warning hide">Register</button>
+                        <button type="button" id="logOutBtn" class="btn btn-outline-warning hide">Log Out</button> 
                         <button type="button" class="btn btn-outline-warning" data-dismiss="modal">Close</button>
+                        
                     </div>
         
                 </div>
             </div>
-        </div>
+        </section>
         
 
         <script src="js/jquery-3.3.1.min.js"></script>

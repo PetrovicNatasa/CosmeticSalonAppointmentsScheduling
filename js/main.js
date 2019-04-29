@@ -63,6 +63,13 @@ $(document).ready(() => {
             !validPasswordInReg(password) || 
             password !== cPassword) {
             return false;
+        } else {
+            $('#registerForm').hide();
+            $('#registration').remove();
+            $('#registerBtn').addClass('hide');
+            $('#logInBtn').removeClass('hide');
+            $('#loginForm').before('<p id="msgBefLgIn" class="text-center">Uspešno ste se registrovali! <br> Ulogujte se</p>').show();    
+            // $('#loginForm').show();
         }
 
         let client = new Client(name, surname, username, email, password);
@@ -75,8 +82,8 @@ $(document).ready(() => {
         }
         return true;
 
-        $('#registerForm').hide();
-        $('#loginForm').show();
+        
+        
     });
 
     $('#name').keyup(() => {
@@ -92,17 +99,18 @@ $(document).ready(() => {
     });
 
     $('#surname').keyup(() => {
-        if (!$('#surname').val().match(/^[^]+$/)) {
+        if (validateNameUtf8($('#surname').val())) {
+            $('#surnameValidation').remove();
+            return true;
+        } else {
             if (!$('#surnameValidation').length) {
                 $('#surname').after('<span id="surnameValidation" class="red">Enter letters only</span>');
             }
-            return false;
-        } else {
-            $('#surnameValidation').remove();
-            return true;
+            return false;            
         }
     });
 
+    
     $('#usernameReg').keyup(function () {
         return validUsernameInReg($(this).val(), clientsArray);
     });
@@ -136,6 +144,13 @@ $(document).ready(() => {
             // Prikazati poruku o neuspesnom logovanju
         }
     });
+
+    $('#registration').click(() => {
+        $('#logInBtn').addClass('hide');
+        $('#registerBtn').removeClass('hide');
+    });
+
+    //$('#actions')
     
     $( "#datePicker" ).datepicker();
     
