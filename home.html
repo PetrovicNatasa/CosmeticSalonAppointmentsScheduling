@@ -209,7 +209,7 @@
                         </div>
                         <p class="text-light py-4 m-0">
                             <i class="far fa-copyright"></i>
-                            Copyright 2019 - made by <span class="laBelle">Nataša Petroivć</span>
+                            Copyright 2019 - made by <span class="laBelle">Nataša Petrović</span>
                         </p>
                     </div>
                 </div>
@@ -223,7 +223,7 @@
                 <div class="modal-content">
                     <div class="modal-header turqoise">
                         <h4 class="modal-title">
-                            <a  href="home.html" class="navbar-brand font-weight-bold m-0 text-light laBelle logo">
+                            <a href="home.html" class="navbar-brand font-weight-bold m-0 text-light laBelle logo">
                                 salon lepote La<i class="fas fa-heart pinkTulip"></i>Belle
                             </a>
                         </h4>
@@ -235,120 +235,103 @@
         
                         <form id="loginForm">
                             <div class="form-group">
-                                <label for="usernameEmail">Username or email</label>
-                                <input type="text" id="usernameEmail" class="form-control" placeholder="Enter your username or email"> <br>
+                                <label for="usernameEmail">Korisničko ime ili e-mail</label>
+                                <input type="text" id="usernameEmail" class="form-control" placeholder="Unesite korisničko ime ili e-mail" autofocus> <br>
                             </div> 
                             
                             <div class="form-group">
-                                <label for="password">Password</label>
-                                <input type="password" id="password" class="form-control" placeholder="Enter your password" required pattern="[a-zA-Z0-9]+"> <br>
+                                <label for="password">Lozinka</label>
+                                <input type="password" id="password" class="form-control" placeholder="Unesite lozinku" required> <br>
                             </div>
                             
                             <div class="text-center">
-                                <a href="#" id="registration" class="text-center">Register</a>
+                                <a href="#" id="registration" class="text-center">Registracija</a>
                             </div>                          
                         </form>
         
                         <form id="registerForm" class="hide">
                             <div class="form-group">
-                                <label for="name">Name</label>
-                                <input type="text" id="name" class="form-control" placeholder="Enter your name" required>
+                                <label for="name">Ime</label>
+                                <input type="text" id="name" class="form-control" placeholder="Unesite ime" required>
                             </div>
 
                             <div class="form-group">
-                                <label for="surname">Surname</label>
-                                <input type="text" id="surname" class="form-control" placeholder="Enter your surname" required>
+                                <label for="surname">Prezime</label>
+                                <input type="text" id="surname" class="form-control" placeholder="Unesite prezime" required>
                             </div>
 
                             <div class="form-group">
-                                <label for="usernameReg">Username</label>
-                                <input type="text" id="usernameReg" class="form-control" placeholder="Enter your username" required>
+                                <label for="usernameReg">Korisničko ime</label>
+                                <input type="text" id="usernameReg" class="form-control" placeholder="Unesite korisničko ime" required>
                             </div>
 
                             <div class="form-group">
-                                <label for="mail">E mail</label>
-                                <input type="email" id="mail" class="form-control" placeholder="Enter your e-mail" required data-validation="email"> 
+                                <label for="mail">E-mail</label>
+                                <input type="email" id="mail" class="form-control" placeholder="Unesite e-mail" required> 
                             </div>
 
                             <div class="form-group">
-                                <label for="passwordReg">Password</label>
-                                <input type="password" id="passwordReg" class="form-control" placeholder="Enter your password" required>
+                                <label for="passwordReg">Lozinka</label>
+                                <input type="password" id="passwordReg" class="form-control" placeholder="Unesite lozinku" required>
                             </div>
 
                             <div class="form-group">
-                                <label for="cPassword">Confirm Password</label>
-                                <input type="password" id="cPassword" class="form-control" placeholder="Enter your password" required>
+                                <label for="cPassword">Potvrda lozinke</label>
+                                <input type="password" id="cPassword" class="form-control" placeholder="Ponovite lozinku" required>
                             </div>
 
                         </form>
         
                         <form id="actions" class="hide">
                             <p class="signInClient text-center"></p>
-                            <button type="button">ZAKAZANI TERMINI</button> <br>
-                            <button type="button">BOOK NOW</button> <br>
-                            <button type="button">LOG OUT</button> <br>
-                            <!-- na klik log out da se staviti modal - zelis da se odjavis? da ne -->
+                            <div class="text-center">
+                                <p>
+                                    <button type="button" id="myTermsBtn" class="btn btnModal text-light font-weight-bold">MOJI TERMINI</button>
+                                </p>
+                                 
+                                <p>
+                                    <button type="button" id="bookBtn" class="btn btnModal text-light font-weight-bold">BOOK NOW</button>
+                                </p>
+                            </div>
                         </form>
         
-                        <form class="hide">
-                            <p class="signInClient"></p>
+                        <form id="bookForm" class="hide">
+                            <i id="arrowLeft" class="fas fa-angle-left fa-2x"></i>
+                            <p class="signInClient text-center"></p>
                             <label for="datePicker"></label>
                             <input id="datePicker" class="far fa-calendar-alt" type="text">
                             <!-- <i class="far fa-calendar-alt"></i>  --><br>
-                            <select>
-                                <option value="" disabled selected>Izaberite uslugu...</option>
-                                <optgroup label="ŠIŠANJE">
-                                    <option value="">ŽENSKO ŠIŠANJE</option>
-                                    <option value="">FENIRANJE</option>
-                                    <option value="">LOKNE SA PRESOM</option>
-                                    <option value="">SVEČANA FRIZURA</option>
-                                </optgroup>
-                                <optgroup label="FARBANJE">
-                                    <option value="">FARBANJE KORENA</option>
-                                    <option value="">FARBANJE CELE DUŽINE</option>
-                                    <option value="">PRAMENOVI</option>
-                                    <option value="">SOMBRE-OMBRE-BALAJAŽ</option>
-                                    <option value="">PRELIV</option>
-                                </optgroup>
-                                <optgroup label="NEGA KOSE">
-                                    <option value="">PAKOVANJE</option>
-                                    <option value="">OLAPLEX TRETMAN</option>
-                                    <option value="">KERATINSKI TRETMAN</option>
-                                </optgroup>
-                                <optgroup label="MANIKIR">
-                                    <option value="">TRAJNI LAK</option>
-                                    <option value="">OJAČAVANJE GELOM</option>
-                                    <option value="">IZLIVANJE GELOM</option>
-                                    <option value="">KOREKCIJA GELA</option>
-                                    <option value="">NAIL ART</option>
-                                </optgroup>
-                                <optgroup label="PEDIKIR">
-                                    <option value="">ESTETSKI PEDIKIR</option>
-                                    <option value="">MEDICINSKI PEDIKIR</option>
-                                    <option value="">TRAJNI LAK</option>
-                                    <option value="">OJAČAVANJE GELOM</option>
-                                    <option value="">KOREKCIJA</option>
-                                </optgroup>
-                                <optgroup label="MAKE UP">
-                                    <option value="">MAKE UP BEZ VEŠTAČKIH TREPAVICA</option>
-                                    <option value="">MAKE UP SA VEŠTAČKIM TREPAVICAMA</option>
-                                </optgroup>
+                            <select id="selectService">
+                                <option value="-1" disabled selected>Izaberite uslugu...</option>                                
                             </select> <br>
         
                             <!-- biranje frizera, kozmeticara treba da bude disabled dok se ne izabere usluga!!! -->
-                            <select disabled>
-                                <option value="" disabled selected>Odaberite clana tima...</option>
-                                <option value="">Ana</option>
-                                <option value="">Milica</option>
-                                <option value="">Jelena</option>
-                                <option value="">Nevena</option>
+                            <select id="selectEmployee" disabled>
+                                <option value="-1" disabled selected>Odaberite clana tima...</option>                                
                             </select>
+
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <tr>
+                                        <td>Usluga</td>
+                                        <td>Član tima</td>
+                                        <td>Cena</td>
+                                        <td></td>
+                                    </tr>
+                                </table>
+                            </div>
                             
                             <!-- dinamicka tabela gde ce se ispisivati usluge koje klijent bira, sa mogucnoscu da obrise uslugu -->
-                            <p id="table"></p>
+                            
 
-                            <button type="button">DODAJ USLUGU</button> <br>
-                            <button type="button">PRONAĐI TERMIN</button>
+                            <div class="text-right">
+                                <p>
+                                <button type="button" class="btn btnModal text-light font-weight-bold">DODAJ USLUGU</button>
+                                </p>
+                                <p>
+                                <button type="button" class="btn btnModal text-light font-weight-bold">PRONAĐI TERMIN</button>
+                                </p>
+                            </div>
 
 
                         </form>
@@ -370,16 +353,16 @@
                             <div id="bookingTerms"></div>
                             <!-- sa mogucnoscu da se izbrisu zakazani termini -->
                         </form>
+
                     </div>
-        
+
                     <div class="modal-footer">
-                        <button type="button" id="logInBtn" class="btn btn-outline-warning">Log In</button>
-                        <button type="submit" id="registerBtn" class="btn btn-outline-warning hide">Register</button>
-                        <button type="button" id="logOutBtn" class="btn btn-outline-warning hide">Log Out</button> 
-                        <button type="button" class="btn btn-outline-warning" data-dismiss="modal">Close</button>
+                        <button type="button" id="logInBtn" class="btn btn-outline-warning">Prijava</button>
+                        <button type="submit" id="registerBtn" class="btn btn-outline-warning hide">Registrujte se</button>
+                        <button type="button" id="logOutBtn" class="btn btn-outline-warning hide">Odjava</button> 
+                        <button type="button" class="btn btn-outline-warning" data-dismiss="modal">Zatvori</button>
                         
-                    </div>
-        
+                    </div>   
                 </div>
             </div>
         </section>

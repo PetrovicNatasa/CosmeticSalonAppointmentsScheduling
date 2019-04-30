@@ -7,7 +7,13 @@ class Client {
         this.password = sha512(password);
     }
 
-    static isUsernameExists(username, clientsArray) {
+    static getClientsArray() {
+        let clientsJson = localStorage.getItem('clients');
+        return clientsJson ? JSON.parse(clientsJson) : [];
+    }
+
+    static isUsernameExists(username) {
+        let clientsArray = Client.getClientsArray();
         for (let existingClient of clientsArray) {
             if (existingClient.username === username) {
                 return true;
@@ -16,7 +22,8 @@ class Client {
         return false;
     }
 
-    static isEmailExists(email, clientsArray) {
+    static isEmailExists(email) {
+        let clientsArray = Client.getClientsArray();
         for (let existingClient of clientsArray) {            
             if (existingClient.email === email) {
                 return true;
@@ -25,14 +32,10 @@ class Client {
         return false;
     }
 
-    static getClientsArray() {
-        let clientsJson = localStorage.getItem('clientsJson');
-        return clientsJson ? JSON.parse(clientsJson) : [];
-    }
-
-    static addAndSaveClient(client, clientsArray) {
+    static addAndSaveClient(client) {
+        let clientsArray = Client.getClientsArray();
         clientsArray.push(client);
         let clientsJson = JSON.stringify(clientsArray);
-        localStorage.setItem('clientsJson', clientsJson);        
+        localStorage.setItem('clients', clientsJson);        
     }    
 }
