@@ -1,0 +1,30 @@
+[
+    {
+        "id":"e0001",
+        "name":"Ana",
+        "skills": [
+            "hct0001","hct0002","hct0003","hct0004","dye0001","dye0002","dye0003","dye0004","dye0005","hcare0001","hcare0002","hcare0003"
+        ]
+    },
+    {
+        "id":"e0002",
+        "name":"Milica",
+        "skills": [
+            "hct0001","hct0002","hct0003","hct0004","dye0001","dye0002","dye0003","dye0004","dye0005","hcare0001","hcare0002","hcare0003"
+        ]
+    },
+    {
+        "id":"e0003",
+        "name":"Jelena",
+        "skills": [
+            "man0001","man0002","man0003","man0004","man0005","ped0001","ped0002","ped0003","ped0004","ped0005"
+        ]
+    },
+    {
+        "id":"e0004",
+        "name":"Nevena",
+        "skills": [
+            "makeup0001","makeup0002"
+        ]
+    }      
+]

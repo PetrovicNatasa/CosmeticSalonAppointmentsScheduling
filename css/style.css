@@ -135,11 +135,7 @@ tr:hover {
 
 }
 
-
-  
-  
-  
-  
+@-webkit-keyframes custom-shake{3%{-webkit-transform:translate(-3px) rotate(-3deg)}6%{-webkit-transform:translate(3px) rotate(3deg)}9%{-webkit-transform:translate(-3px) rotate(-3deg)}12%{-webkit-transform:translate(3px) rotate(3deg)}15%{-webkit-transform:translate(-3px) rotate(-3deg)}18%{-webkit-transform:translate(3px) rotate(3deg)}0%,21%,to{-webkit-transform:translate(0) rotate(0deg)}}@keyframes custom-shake{3%{-webkit-transform:translate(-3px) rotate(-3deg);transform:translate(-3px) rotate(-3deg)}6%{-webkit-transform:translate(3px) rotate(3deg);transform:translate(3px) rotate(3deg)}9%{-webkit-transform:translate(-3px) rotate(-3deg);transform:translate(-3px) rotate(-3deg)}12%{-webkit-transform:translate(3px) rotate(3deg);transform:translate(3px) rotate(3deg)}15%{-webkit-transform:translate(-3px) rotate(-3deg);transform:translate(-3px) rotate(-3deg)}18%{-webkit-transform:translate(3px) rotate(3deg);transform:translate(3px) rotate(3deg)}0%,21%,to{-webkit-transform:translate(0) rotate(0deg);transform:translate(0) rotate(0deg)}}.animation-shake{animation:custom-shake 6s ease-in-out 3s infinite;}.animation-shake:hover{-webkit-animation:none;animation:none}
   
   
   

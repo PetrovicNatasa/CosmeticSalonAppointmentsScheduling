@@ -15,6 +15,7 @@
     </head>
 
     <body>
+        
         <nav id="mainNavBar" class="navbar navbar-expand-md navbar-dark fixed-top borderBottom">
 
             <div class="navbar-header">
@@ -37,26 +38,7 @@
                             href="cenovnik.html">
                             CENOVNIK
                         </a>
-                        <ul class="dropdown-menu py-0">
-                            <li>
-                                <a class="dropdown-item font-weight-bold aquamarine text-light navbarLink" href="cenovnik.html">ŠIŠANJE</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item font-weight-bold aquamarine text-light navbarLink" href="">FARBANJE</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item font-weight-bold aquamarine text-light navbarLink" href="#">NEGA KOSE</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item font-weight-bold aquamarine text-light navbarLink" href="#">MANIKIR</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item font-weight-bold aquamarine text-light navbarLink" href="#">PEDIKIR</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item font-weight-bold aquamarine text-light navbarLink" href="#">MAKE UP</a>
-                            </li>
-                        </ul>
+                        <ul id="priceListMenu" class="dropdown-menu py-0"></ul>
                     </li>
                     <!-- <li class="nav=item">
                                 <a class="nav-link text-light font-weight-bold mr-1 navbarLink" href="#">AKCIJA</a>
@@ -78,272 +60,12 @@
 
             </div>
         </nav>
-
+        
         <div id="backgroundTable" class="table-responsive">
             <table id="tblPrice" class="table">
                 <tr>
                     <th colspan="4" id="thMain" class="text-center text-light textShadow">CENOVNIK</th>
-                </tr>
-
-                <tr id="haircut">
-                    <th id="hairCut" colspan="4" class="text-center text-light textShadow">
-                        ŠIŠANJE
-                    </th>
-                </tr>
-
-                <tr class="text-muted font-weight-bold">
-                    <td>1.</td>
-                    <td>ŽENSKO ŠIŠANJE</td>
-                    <td>
-                        <a href="#myModal" data-toggle="modal" data-target="#bookNow" class="text-light text-truncate font-weight-bold book">
-                            BOOK NOW
-                        </a>
-                    </td>
-                    <td>700</td>
-                </tr>
-
-                <tr class="text-muted font-weight-bold">
-                    <td>2.</td>
-                    <td>FENIRANJE</td>
-                    <td>
-                        <a href="#myModal" data-toggle="modal" data-target="#bookNow" class="text-light text-truncate font-weight-bold book">
-                            BOOK NOW
-                        </a>
-                    </td>
-                    <td>500</td>
-                </tr>
-
-                <tr class="text-muted font-weight-bold">
-                    <td>3.</td>
-                    <td>LOKNE SA PRESOM</td>
-                    <td>
-                        <a href="#myModal" data-toggle="modal" data-target="#bookNow" class="text-light text-truncate font-weight-bold book">
-                            BOOK NOW
-                        </a>
-                    </td>
-                    <td>400</td>
-                </tr>
-
-                <tr class="text-muted font-weight-bold">
-                    <td>4.</td>
-                    <td>SVEČANA FRIZURA</td>
-                    <td>
-                        <a href="#myModal" data-toggle="modal" data-target="#bookNow"
-                            class="text-light text-truncate font-weight-bold book">
-                            BOOK NOW
-                        </a>
-                    </td>
-                    <td>1600</td>
-                </tr>
-                
-                <tr class="text-muted font-weight-bold">
-                    <th colspan="4" class="text-center text-light textShadow">
-                        FARBANJE
-                    </th>
-                </tr>
-                
-                <tr class="text-muted font-weight-bold">
-                    <td>1.</td>
-                    <td>FARBANJE KORENA</td>
-                    <td>
-                        <a href="#myModal" data-toggle="modal" data-target="#bookNow"
-                            class="text-light text-truncate font-weight-bold book">
-                            BOOK NOW
-                        </a>
-                    </td>
-                    <td>800</td>
-                </tr>
-                
-                <tr class="text-muted font-weight-bold">
-                    <td>2.</td>
-                    <td>FARBANJE CELE DUŽINE</td>
-                    <td>
-                        <a href="#myModal" data-toggle="modal" data-target="#bookNow"
-                            class="text-light text-truncate font-weight-bold book">
-                            BOOK NOW
-                        </a>
-                    </td>
-                    <td>1400</td>
-                </tr>
-                
-                <tr class="text-muted font-weight-bold">
-                    <td>3.</td>
-                    <td>PRAMENOVI</td>
-                    <td>
-                        <a href="#myModal" data-toggle="modal" data-target="#bookNow"
-                            class="text-light text-truncate font-weight-bold book">
-                            BOOK NOW
-                        </a></td>
-                    <td>2500</td>
-                </tr>
-                
-                <tr class="text-muted font-weight-bold">
-                    <td>4.</td>
-                    <td>SOMBRE-OMBRE-BALAJAŽ</td>
-                    <td>
-                        <a href="#myModal" data-toggle="modal" data-target="#bookNow"
-                            class="text-light text-truncate font-weight-bold book">
-                            BOOK NOW
-                        </a>
-                    </td>
-                    <td>2500</td>
-                </tr>
-                
-                <tr class="text-muted font-weight-bold">
-                    <td>5.</td>
-                    <td>PRELIV</td>
-                    <td>
-                        <a href="#myModal" data-toggle="modal" data-target="#bookNow"
-                            class="text-light text-truncate font-weight-bold book">
-                            BOOK NOW
-                        </a>
-                    </td>
-                    <td>800</td>
-                </tr>
-                
-                <tr class="text-muted font-weight-bold">
-                    <th colspan="4" class="text-center text-light textShadow">
-                        NEGA KOSE
-                    </th>
-                </tr>
-                
-                <tr class="text-muted font-weight-bold">
-                    <td>1.</td>
-                    <td>PAKOVANJE</td>
-                    <td><a href="#myModal" data-toggle="modal" data-target="#bookNow"
-                            class="text-light text-truncate font-weight-bold book">BOOK NOW</a></td>
-                    <td>300</td>
-                </tr>
-                
-                <tr class="text-muted font-weight-bold">
-                    <td>2.</td>
-                    <td>OLAPLEX TRETMAN</td>
-                    <td><a href="#myModal" data-toggle="modal" data-target="#bookNow"
-                            class="text-light text-truncate font-weight-bold book">BOOK NOW</a></td>
-                    <td>2500</td>
-                </tr>
-                
-                <tr class="text-muted font-weight-bold">
-                    <td>3.</td>
-                    <td>KERATINSKI TRETMAN</td>
-                    <td><a href="#myModal" data-toggle="modal" data-target="#bookNow"
-                            class="text-light text-truncate font-weight-bold book">BOOK NOW</a></td>
-                    <td>1500</td>
-                </tr>
-                
-                <tr class="text-muted font-weight-bold">
-                    <th colspan="4" class="text-center text-light textShadow">
-                        MANIKIR
-                    </th>
-                </tr>
-                
-                <tr class="text-muted font-weight-bold">
-                    <td>1.</td>
-                    <td>TRAJNI LAK</td>
-                    <td><a href="#myModal" data-toggle="modal" data-target="#bookNow"
-                            class="text-light text-truncate font-weight-bold book">BOOK NOW</a></td>
-                    <td>1000</td>
-                </tr>
-                
-                <tr class="text-muted font-weight-bold">
-                    <td>2.</td>
-                    <td>OJAČAVANJE GELOM</td>
-                    <td><a href="#myModal" data-toggle="modal" data-target="#bookNow"
-                            class="text-light text-truncate font-weight-bold book">BOOK NOW</a></td>
-                    <td>1200</td>
-                </tr>
-                
-                <tr class="text-muted font-weight-bold">
-                    <td>3.</td>
-                    <td>IZLIVANJE GELOM</td>
-                    <td><a href="#myModal" data-toggle="modal" data-target="#bookNow"
-                            class="text-light text-truncate font-weight-bold book">BOOK NOW</a></td>
-                    <td>1400</td>
-                </tr>
-                
-                <tr class="text-muted font-weight-bold">
-                    <td>4.</td>
-                    <td>KOREKCIJA GELA</td>
-                    <td><a href="#myModal" data-toggle="modal" data-target="#bookNow" class="text-light font-weight-bold book">BOOK
-                            NOW</a></td>
-                    <td>1200</td>
-                </tr>
-                
-                <tr class="text-muted font-weight-bold">
-                    <td>5.</td>
-                    <td>NAIL ART</td>
-                    <td><a href="#myModal" data-toggle="modal" data-target="#bookNow" class="text-light font-weight-bold book">BOOK
-                            NOW</a></td>
-                    <td>500</td>
-                </tr>
-                
-                <tr class="text-muted font-weight-bold">
-                    <th colspan="4" class="text-center text-light textShadow">
-                        PEDIKIR
-                    </th>
-                </tr>
-                
-                <tr class="text-muted font-weight-bold">
-                    <td>1.</td>
-                    <td>ESTETSKI PEDIKIR</td>
-                    <td><a href="#myModal" data-toggle="modal" data-target="#bookNow" class="text-light font-weight-bold book">BOOK
-                            NOW</a></td>
-                    <td>1100</td>
-                </tr>
-                
-                <tr class="text-muted font-weight-bold">
-                    <td>2.</td>
-                    <td>MEDICINSKI PEDIKIR</td>
-                    <td><a href="#myModal" data-toggle="modal" data-target="#bookNow" class="text-light font-weight-bold book">BOOK
-                            NOW</a></td>
-                    <td>1500</td>
-                </tr>
-                
-                <tr class="text-muted font-weight-bold">
-                    <td>3.</td>
-                    <td>TRAJNI LAK</td>
-                    <td><a href="#myModal" data-toggle="modal" data-target="#bookNow" class="text-light font-weight-bold book">BOOK
-                            NOW</a></td>
-                    <td>800</td>
-                </tr>
-                
-                <tr class="text-muted font-weight-bold">
-                    <td>4.</td>
-                    <td>OJAČAVANJE GELOM</td>
-                    <td><a href="#myModal" data-toggle="modal" data-target="#bookNow" class="text-light font-weight-bold book">BOOK
-                            NOW</a></td>
-                    <td>1200</td>
-                </tr>
-                
-                <tr class="text-muted font-weight-bold">
-                    <td>5.</td>
-                    <td>KOREKCIJA GELA</td>
-                    <td><a href="#myModal" data-toggle="modal" data-target="#bookNow" class="text-light font-weight-bold book">BOOK
-                            NOW</a></td>
-                    <td>1000</td>
-                </tr>
-                
-                <tr id="makeUp" class="text-muted font-weight-bold">
-                    <th colspan="4" class="text-center text-light textShadow">
-                        MAKE UP
-                    </th>
-                </tr>
-                
-                <tr class="text-muted font-weight-bold">
-                    <td>1.</td>
-                    <td>MAKE UP BEZ VEŠTAČKIH TREPAVICA</td>
-                    <td><a href="#myModal" data-toggle="modal" data-target="#bookNow" class="text-light font-weight-bold book">BOOK
-                            NOW</a></td>
-                    <td>2500</td>
-                </tr>
-                
-                <tr class="text-muted font-weight-bold">
-                    <td>2.</td>
-                    <td>MAKE UP SA VEŠTAČKIM TREPAVICAMA</td>
-                    <td><a href="#myModal" data-toggle="modal" data-target="#bookNow" class="text-light font-weight-bold book">BOOK
-                            NOW</a></td>
-                    <td>3000</td>
-                </tr>
+                </tr>                
             </table>
         </div>
         
@@ -371,7 +93,7 @@
                         </div>
                         <p class="text-light py-4 m-0">
                             <i class="far fa-copyright"></i>
-                            Copyright 2019 - made by <span class="laBelle">Nataša Petroivć</span>
+                            Copyright 2019 - made by <span class="laBelle">Nataša Petrović</span>
                         </p>
                     </div>
                 </div>
@@ -380,8 +102,8 @@
         </footer>
 
 
-        <div class="modal fade" id="bookNow">
-            <div class="modal-dialog modal-lg">
+        <section class="modal fade" id="bookNow">
+            <div class="modal-dialog modal-md">
                 <div class="modal-content">
                     <div class="modal-header turqoise">
                         <h4 class="modal-title">
@@ -395,135 +117,147 @@
                     <div class="modal-body">
                         <p id="successReg"></p>
         
-                        <form id="loginForm" action="POST">
-                            <!-- staviti za logovanje username ili email!!!! -->
-                            <label for="username">Username</label>
-                            <input id="username" type="text" placeholder="Enter your username"> <br>
-                            <label for="password">Password</label>
-                            <input id="password" type="password" placeholder="Enter your password" required
-                                pattern="[a-zA-Z0-9]+"> <br>
-                            <button id="logInBtn" type="submit">Log In</button>
-                            <button id="logOutBtn" type="button">Log Out</button> <br>
-                            <a href="#" id="registration">Register</a>
+                        <form id="loginForm">
+                            <div class="form-group">
+                                <label for="usernameEmail">Korisničko ime ili e-mail</label>
+                                <input type="text" id="usernameEmail" class="form-control"
+                                    placeholder="Unesite korisničko ime ili e-mail" autofocus> <br>
+                            </div>
+        
+                            <div class="form-group">
+                                <label for="password">Lozinka</label>
+                                <input type="password" id="password" class="form-control" placeholder="Unesite lozinku"
+                                    required> <br>
+                            </div>
+        
+                            <div class="text-center">
+                                <a href="#" id="registration" class="text-center">Registracija</a>
+                            </div>
                         </form>
         
-                        <form id="registerForm" action="POST" class="text-center hide">
-                            <label for="name">Name</label>
-                            <input id="name" type="text" placeholder="Enter your name" required pattern="[a-zA-Z\s]+"> <br>
-                            <label for="surname">Surname</label>
-                            <input id="surname" type="text" placeholder="Enter your surname" required pattern="[a-zA-Z\s]+">
-                            <br>
-                            <label for="usernameReg">Username</label>
-                            <input id="usernameReg" type="text" placeholder="Enter your username" required>
-                            <!--pattern="[a-zA-Z0-9]+\.[a-zA-Z0-9]*"--> <br>
-                            <label for="mail">E mail</label>
-                            <input id="mail" type="email" placeholder="Enter your e-mail" required data-validation="email"> <br>
-                            <label for="passwordReg">Password</label>
-                            <input id="passwordReg" type="password" placeholder="Enter your password" required
-                                pattern="[a-zA-Z0-9]+"> <br>
-                            <label for="cPassword">Confirm Password</label>
-                            <input id="cPassword" type="password" placeholder="Enter your password" required
-                                pattern="[a-zA-Z0-9]+"> <br>
-                            <button id="registerBtn" type="submit">Register</button>
+                        <form id="registerForm" class="hide">
+                            <div class="form-group">
+                                <label for="name">Ime</label>
+                                <input type="text" id="name" class="form-control" placeholder="Unesite ime" required>
+                            </div>
+        
+                            <div class="form-group">
+                                <label for="surname">Prezime</label>
+                                <input type="text" id="surname" class="form-control" placeholder="Unesite prezime" required>
+                            </div>
+        
+                            <div class="form-group">
+                                <label for="usernameReg">Korisničko ime</label>
+                                <input type="text" id="usernameReg" class="form-control" placeholder="Unesite korisničko ime"
+                                    required>
+                            </div>
+        
+                            <div class="form-group">
+                                <label for="mail">E-mail</label>
+                                <input type="email" id="mail" class="form-control" placeholder="Unesite e-mail" required>
+                            </div>
+        
+                            <div class="form-group">
+                                <label for="passwordReg">Lozinka</label>
+                                <input type="password" id="passwordReg" class="form-control" placeholder="Unesite lozinku"
+                                    required>
+                            </div>
+        
+                            <div class="form-group">
+                                <label for="cPassword">Potvrda lozinke</label>
+                                <input type="password" id="cPassword" class="form-control" placeholder="Ponovite lozinku"
+                                    required>
+                            </div>
+        
                         </form>
         
-                        <form action="POST" class="hide">
-                            <p class="signInClient"></p>
-                            <button type="button">ZAKAZANI TERMINI</button> <br>
-                            <button type="button">BOOK NOW</button> <br>
-                            <button type="button">LOG OUT</button> <br>
-                            <!-- na klik log out da se staviti modal - zelis da se odjavis? da ne -->
+                        <form id="actions" class="hide">
+                            <p class="signInClient text-center"></p>
+                            <div class="text-center">
+                                <p>
+                                    <button type="button" id="myTermsBtn" class="btn btnModal text-light font-weight-bold">MOJI
+                                        TERMINI</button>
+                                </p>
+        
+                                <p>
+                                    <button type="button" id="bookBtn" class="btn btnModal text-light font-weight-bold">BOOK
+                                        NOW</button>
+                                </p>
+                            </div>
                         </form>
         
-                        <form action="POST" class="hide">
-                            <p class="signInClient"></p>
+                        <form id="bookForm" class="hide">
+                            <i id="arrowLeft" class="fas fa-angle-left fa-2x"></i>
+                            <p class="signInClient text-center"></p>
                             <label for="datePicker"></label>
                             <input id="datePicker" class="far fa-calendar-alt" type="text">
                             <!-- <i class="far fa-calendar-alt"></i>  --><br>
-                            <select>
-                                <option value="" disabled selected>Izaberite uslugu...</option>
-                                <optgroup label="ŠIŠANJE">
-                                    <option value="">ŽENSKO ŠIŠANJE</option>
-                                    <option value="">FENIRANJE</option>
-                                    <option value="">LOKNE SA PRESOM</option>
-                                    <option value="">SVEČANA FRIZURA</option>
-                                </optgroup>
-                                <optgroup label="FARBANJE">
-                                    <option value="">FARBANJE KORENA</option>
-                                    <option value="">FARBANJE CELE DUŽINE</option>
-                                    <option value="">PRAMENOVI</option>
-                                    <option value="">SOMBRE-OMBRE-BALAJAŽ</option>
-                                    <option value="">PRELIV</option>
-                                </optgroup>
-                                <optgroup label="NEGA KOSE">
-                                    <option value="">PAKOVANJE</option>
-                                    <option value="">OLAPLEX TRETMAN</option>
-                                    <option value="">KERATINSKI TRETMAN</option>
-                                </optgroup>
-                                <optgroup label="MANIKIR">
-                                    <option value="">TRAJNI LAK</option>
-                                    <option value="">OJAČAVANJE GELOM</option>
-                                    <option value="">IZLIVANJE GELOM</option>
-                                    <option value="">KOREKCIJA GELA</option>
-                                    <option value="">NAIL ART</option>
-                                </optgroup>
-                                <optgroup label="PEDIKIR">
-                                    <option value="">ESTETSKI PEDIKIR</option>
-                                    <option value="">MEDICINSKI PEDIKIR</option>
-                                    <option value="">TRAJNI LAK</option>
-                                    <option value="">OJAČAVANJE GELOM</option>
-                                    <option value="">KOREKCIJA</option>
-                                </optgroup>
-                                <optgroup label="MAKE UP">
-                                    <option value="">MAKE UP BEZ VEŠTAČKIH TREPAVICA</option>
-                                    <option value="">MAKE UP SA VEŠTAČKIM TREPAVICAMA</option>
-                                </optgroup>
+                            <select id="selectService">
+                                <option value="-1" disabled selected>Izaberite uslugu...</option>
                             </select> <br>
         
                             <!-- biranje frizera, kozmeticara treba da bude disabled dok se ne izabere usluga!!! -->
-                            <select disabled>
-                                <option value="" disabled selected>Odaberite clana tima...</option>
-                                <option value="">Ana</option>
-                                <option value="">Milica</option>
-                                <option value="">Jelena</option>
-                                <option value="">Nevena</option>
+                            <select id="selectEmployee">
+                                <option value="-1" disabled selected>Odaberite clana tima...</option>
                             </select>
         
-                            <!-- dinamicka tabela gde ce se ispisivati usluge koje klijent bira, sa mogucnoscu da obrise -->
-                            <p id="table"></p>
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <tr>
+                                        <td>Usluga</td>
+                                        <td>Član tima</td>
+                                        <td>Cena</td>
+                                        <td></td>
+                                    </tr>
+                                </table>
+                            </div>
         
-                            <button type="button">DODAJ USLUGU</button> <br>
-                            <button type="button">PRONAĐI TERMIN</button>
+                            <!-- dinamicka tabela gde ce se ispisivati usluge koje klijent bira, sa mogucnoscu da obrise uslugu -->
+        
+        
+                            <div class="text-right">
+                                <p>
+                                    <button type="button" class="btn btnModal text-light font-weight-bold">DODAJ USLUGU</button>
+                                </p>
+                                <p>
+                                    <button type="button" class="btn btnModal text-light font-weight-bold">PRONAĐI
+                                        TERMIN</button>
+                                </p>
+                            </div>
         
         
                         </form>
         
-                        <form action="POST" class="hide">
+                        <form class="hide">
                             <!-- kad se klikne 'PRONADJI TERMIN' -->
                             <!-- treba da se pojavi kalendar sa slobodnim terminima -->
                         </form>
         
-                        <form action="POST" class="hide">
+                        <form class="hide">
                             <p id="choosenDate"></p>
                             <div id="choosenServices"></div>
                             <p id="total"></p>
                             <button type="button">POTVRDI</button>
                         </form>
         
-                        <form action="POST" class="hide">
+                        <form class="hide">
                             <p>Vidimo se u salonu La Belle <span>neki datum</span></p>
                             <div id="bookingTerms"></div>
                             <!-- sa mogucnoscu da se izbrisu zakazani termini -->
                         </form>
+        
                     </div>
         
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-outline-warning" data-dismiss="modal">Close</button>
-                    </div>
+                        <button type="button" id="logInBtn" class="btn btn-outline-warning">Prijava</button>
+                        <button type="submit" id="registerBtn" class="btn btn-outline-warning hide">Registrujte se</button>
+                        <button type="button" id="logOutBtn" class="btn btn-outline-warning hide">Odjava</button>
+                        <button type="button" class="btn btn-outline-warning" data-dismiss="modal">Zatvori</button>
         
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
 
 
         <script src="js/jquery-3.3.1.min.js"></script>
@@ -533,6 +267,7 @@
         <script src="js/main.js"></script>
         <script src="js/Client.js"></script>
         <script src="js/sha512.min.js"></script>
+        <script src="js/cenovnik.js"></script>
     </body>
 
 </html>

@@ -1,0 +1,177 @@
+[
+	{
+		"category":"ŠIŠANJE",
+		"items":[
+			{
+				"id":"hct0001",
+				"name":"ŽENSKO ŠIŠANJE",
+				"duration":30,
+				"price":700
+			},
+			{
+				"id":"hct0002",
+				"name":"FENIRANJE",
+				"duration":30,
+				"price":500
+			},
+			{
+				"id":"hct0003",
+				"name":"LOKNE SA PRESOM",
+				"duration":25,
+				"price":400
+			},
+			{
+				"id":"hct0004",
+				"name":"SVEČANA FRIZURA",
+				"duration":45,
+				"price":1600
+			}			
+		]
+	},
+	{
+		"category":"FARBANJE",
+		"items":[
+			{
+				"id":"dye0001",
+				"name":"FARBANJE KORENA",
+				"duration":60,
+				"price":800
+			},
+			{
+				"id":"dye0002",
+				"name":"FARBANJE CELE DUŽINE",
+				"duration":60,
+				"price":1400
+			},
+			{
+				"id":"dye0003",
+				"name":"PRAMENOVI",
+				"duration":120,
+				"price":2500
+			},
+			{
+				"id":"dye0004",
+				"name":"SOMBRE-OMBRE-BALAJAŽ",
+				"duration":120,
+				"price":2500
+			},
+			{
+				"id":"dye0005",
+				"name":"PRELIV",
+				"duration":45,
+				"price":800
+			}
+		]
+	},
+	{
+		"category":"NEGA KOSE",
+		"items":[
+			{
+				"id":"hcare0001",
+				"name":"PAKOVANJE",
+				"duration":35,
+				"price":300
+			},
+			{
+				"id":"hcare0002",
+				"name":"OLAPLEX TRETMAN",
+				"duration":45,
+				"price":2500
+			},
+			{
+				"id":"hcare0003",
+				"name":"KERATINSKI TRETMAN",
+				"duration":35,
+				"price":1500
+
+			}
+		]
+	},
+	{
+		"category":"MANIKIR",
+		"items":[
+			{
+				"id":"man0001",
+				"name":"TRAJNI LAK",
+				"duration":60,
+				"price":1000
+			},
+			{
+				"id":"man0002",
+				"name":"OJAČAVANJE GELOM",
+				"duration":60,
+				"price":1000
+			},
+			{
+				"id":"man0003",
+				"name":"IZLIVANJE GELOM",
+				"duration":75,
+				"price":1400
+			},
+			{
+				"id":"man0004",
+				"name":"KOREKCIJA GELA",
+				"duration":60,
+				"price":1200
+			},
+			{
+				"id":"man0005",
+				"name":"NAIL ART",
+				"duration":20,
+				"price":500
+			}
+		]
+	},
+	{
+		"category":"PEDIKIR",
+		"items":[
+			{
+				"id":"ped0001",
+				"name":"ESTETSKI PEDIKIR",
+				"duration":45,
+				"price":1100
+			},
+			{
+				"id":"ped0002",
+				"name":"MEDICINSKI PEDIKIR",
+				"duration":45,
+				"price":1500
+			},
+			{
+				"id":"ped0003",
+				"name":"TRAJNI LAK",
+				"duration":60,
+				"price":800
+			},
+			{
+				"id":"ped0004",
+				"name":"OJAČAVANJE GELOM",
+				"duration":60,
+				"price":1200
+			},
+			{
+				"id":"ped0005",
+				"name":"KOREKCIJA",
+				"duration":60,
+				"price":1000
+			}
+		]
+	},
+	{
+		"category":"MAKE UP",
+		"items":[
+			{
+				"id":"makeup0001",
+				"name":"MAKE UP BEZ VEŠTAČKIH TREPAVICA",
+				"duration":75,
+				"price":2500
+			},
+			{
+				"id":"makeup0002",
+				"name":"MAKE UP SA VEŠTAČKIM TREPAVICAMA",
+				"duration":75,
+				"price":3000
+			}
+		]
+	}
+]

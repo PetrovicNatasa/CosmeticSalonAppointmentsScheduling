@@ -37,9 +37,20 @@ $(document).ready(() => {
             optGroup.appendChild(new Option(specificService.name, specificService.id));
         }
     }
-    let employeesJson = localStorage.getItem('empoyees');
+
+    servicesArray.forEach(service => {
+        let idCategory = (service.category).replace(' ', '');
+        let dropdownMenu = 
+        `<li>
+            <a class="dropdown-item font-weight-bold aquamarine text-light navbarLink" href="cenovnik.html#${idCategory}">${service.category}</a>
+        </li>`;
+        $('#priceListMenu').append(dropdownMenu);
+    });
+    
+
+    let employeesJson = localStorage.getItem('employees');
     let employeesArray = employeesJson ? JSON.parse(employeesJson) : [];
-    let selectEmployee = $('#selectEployee');
+    let selectEmployee = $('#selectEmployee');
 
     for (const employee of employeesArray) {
         selectEmployee.append(new Option(employee.name, employee.id));

@@ -36,26 +36,7 @@
                         <a class="nav-link text-light font-weight-bold dropdown-toggle mr-1 navbarLink" href="cenovnik.html">
                             CENOVNIK
                         </a>
-                        <ul class="dropdown-menu py-0">
-                            <li>
-                                <a class="dropdown-item font-weight-bold aquamarine text-light navbarLink" href="cenovnik.html">ŠIŠANJE</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item font-weight-bold aquamarine text-light navbarLink" href="cenovnik.html#haircut">FARBANJE</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item font-weight-bold aquamarine text-light navbarLink" href="#">NEGA KOSE</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item font-weight-bold aquamarine text-light navbarLink" href="#">MANIKIR</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item font-weight-bold aquamarine text-light navbarLink" href="#">PEDIKIR</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item font-weight-bold aquamarine text-light navbarLink" href="cenovnik.html#makeUp">MAKE UP</a>
-                            </li>
-                        </ul>
+                        <ul id="priceListMenu" class="dropdown-menu py-0"></ul>
                     </li>
                     <!-- <li class="nav=item">
                                             <a class="nav-link text-light font-weight-bold mr-1 navbarLink" href="#">AKCIJA</a>
@@ -65,7 +46,7 @@
                     </li>
                     <li class="nav=item">
                         <a data-toggle="modal" data-target="#bookNow"
-                            class="nav-link text-light text-truncate font-weight-bold mr-1 book" href="#myModal">
+                            class="nav-link text-light text-truncate font-weight-bold mr-1 book animation-shake" href="#myModal">
                             BOOK NOW
                         </a>
                     </li>
@@ -306,7 +287,7 @@
                             </select> <br>
         
                             <!-- biranje frizera, kozmeticara treba da bude disabled dok se ne izabere usluga!!! -->
-                            <select id="selectEmployee" disabled>
+                            <select id="selectEmployee" >
                                 <option value="-1" disabled selected>Odaberite clana tima...</option>                                
                             </select>
 
