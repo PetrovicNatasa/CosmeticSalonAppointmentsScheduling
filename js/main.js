@@ -50,11 +50,33 @@ $(document).ready(() => {
 
     let employeesJson = localStorage.getItem('employees');
     let employeesArray = employeesJson ? JSON.parse(employeesJson) : [];
-    let selectEmployee = $('#selectEmployee');
+    let selectEmployee = $('#selectEmployee'); // da ne trazi element u DOMu u for petlji
 
-    for (const employee of employeesArray) {
-        selectEmployee.append(new Option(employee.name, employee.id));
-    }
+    $('#selectService').on('change', function() {
+        let employeeOptionsHtml = '<option value="-1" disabled selected>Odaberite člana tima...</option>';        
+        for (const employee of employeesArray) {
+            if (-1 !== employee.skills.indexOf(this.value)) {
+                employeeOptionsHtml += `<option value="${employee.id}">${employee.name}</option>`;
+            }
+        }
+        selectEmployee.html(employeeOptionsHtml);
+    });
+    
+    $(selectEmployee).on('change', function() {
+
+    });
+
+    $('#findFreePeriod').on('click', function() {
+        let startDateRange = $('#startDatePicker').val();
+        let endDateRange = $('#endDatePicker').val();
+        let selectedService = $('#selectService').val();
+        let selectedEmployee = selectEmployee.val();
+
+        let reservationsJson = localStorage.getItem('reservations');
+        let reservationsArray = reservationsJson !== null ? JSON.parse(reservationsJson) : [];
+    });
+
+    
 
     const validUsernameInReg = (username) => {
         if (Client.isUsernameExists(username)) {
@@ -170,17 +192,13 @@ $(document).ready(() => {
     $('#logInBtn').click(() => {
         let usernameOrEmail = $('#usernameEmail').val();
         let password = $('#password').val();
-        let loggedInClient;
-        let clientsArray = Client.getClientsArray();
-        for (let client of clientsArray) {
-            if ((usernameOrEmail === client.username || usernameOrEmail === client.email)  && (sha512(password) === client.password)) {
-                loggedInClient = client;
-                break;
-            }
-        } 
+        let loggedInClient = Client.tryToLogin(usernameOrEmail, password);
+
         if (loggedInClient !== undefined) {
+            sessionStorage.setItem('loggedInUser', JSON.stringify(loggedInClient));
             $('.signInClient').html(`Dobrodošli, ${loggedInClient.name} ${loggedInClient.surname}`);
             $('#loginForm').hide();
+            $('#bookForm').hide();
             $('#actions').show();
             $('#msgBefLgIn').remove();
             $('#logInBtn').addClass('hide');
@@ -200,7 +218,9 @@ $(document).ready(() => {
 
     $('#logOutBtn').click(() => {
         if (confirm('Da li ste sigurni da želite da se izlogujete?')) {
+            sessionStorage.removeItem('loggedInUser');
             $('#actions').hide();
+            $('#bookForm').hide();
             $('#loginForm').show();
             clearFields($('#loginForm'));
             $('#logOutBtn').addClass('hide');
@@ -210,8 +230,20 @@ $(document).ready(() => {
         }
     });
 
-    $('#bookNow').on('hidden.bs.modal', function (event) {
-        clearFields($('#bookNow'));
+    $('#bookNow').on('hidden.bs.modal', () => {
+        clearFields($('#bookNow'));        
+    });
+
+    $('#bookNow').on('show.bs.modal', () => {
+        if(sessionStorage.getItem('loggedInUser') !== null) {
+            let loggedInClient = JSON.parse(sessionStorage.getItem('loggedInUser'));
+            $('.signInClient').html(`Dobrodošli, ${loggedInClient.name} ${loggedInClient.surname}`);
+            $('#loginForm').hide();
+            $('#actions').show();
+            $('#bookForm').hide();            
+            $('#logInBtn').addClass('hide');
+            $('#logOutBtn').removeClass('hide');
+        }        
     });
 
     $('#bookBtn').click(() => {
@@ -224,6 +256,8 @@ $(document).ready(() => {
         $('#actions').show();
     });
     
-    $( "#datePicker" ).datepicker();
+    $('#startDatePicker,#endDatePicker').datepicker({
+        dateFormat: 'dd.mm.yy'
+    });
     
 });

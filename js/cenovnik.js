@@ -18,7 +18,7 @@ $(document).ready(() => {
                 <td>${++count}.</td>
                 <td>${specificService.name}</td>
                 <td>
-                    <a href="#myModal" data-toggle="modal" data-target="#bookNow" class="text-light text-truncate font-weight-bold book">
+                    <a href="#" data-toggle="modal" data-target="#bookNow" class="text-light text-truncate font-weight-bold book">
                         BOOK NOW
                     </a>
                 </td>

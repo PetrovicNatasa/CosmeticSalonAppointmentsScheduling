@@ -37,5 +37,14 @@ class Client {
         clientsArray.push(client);
         let clientsJson = JSON.stringify(clientsArray);
         localStorage.setItem('clients', clientsJson);        
-    }    
+    }
+    
+    static tryToLogin(usernameOrEmail, password) {
+        let clientsArray = Client.getClientsArray();
+        for (let client of clientsArray) {
+            if ((usernameOrEmail === client.username || usernameOrEmail === client.email)  && (sha512(password) === client.password)) {
+                return client;
+            }
+        }
+    }
 }

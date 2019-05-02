@@ -46,7 +46,7 @@
                     </li>
                     <li class="nav=item">
                         <a data-toggle="modal" data-target="#bookNow"
-                            class="nav-link text-light text-truncate font-weight-bold mr-1 book animation-shake" href="#myModal">
+                            class="nav-link text-light text-truncate font-weight-bold mr-1 book animation-shake" href="#">
                             BOOK NOW
                         </a>
                     </li>
@@ -212,7 +212,6 @@
                     </div>
         
                     <div class="modal-body">
-                        <p id="successReg"></p>
         
                         <form id="loginForm">
                             <div class="form-group">
@@ -279,16 +278,23 @@
                         <form id="bookForm" class="hide">
                             <i id="arrowLeft" class="fas fa-angle-left fa-2x"></i>
                             <p class="signInClient text-center"></p>
-                            <label for="datePicker"></label>
-                            <input id="datePicker" class="far fa-calendar-alt" type="text">
-                            <!-- <i class="far fa-calendar-alt"></i>  --><br>
-                            <select id="selectService">
+
+                            <div class="row">
+                                <div class="col">
+                                    <input type="text" id="startDatePicker" class="form-control mb-1" placeholder="&#128198;Početni datum">
+                                </div>
+                                <div class="col">
+                                    <input type="text" id="endDatePicker" class="form-control mb-1" placeholder="&#128198;Krajnji datum">
+                                </div>
+                            </div>
+
+                            <select id="selectService" class="custom-select mb-1">
                                 <option value="-1" disabled selected>Izaberite uslugu...</option>                                
                             </select> <br>
         
                             <!-- biranje frizera, kozmeticara treba da bude disabled dok se ne izabere usluga!!! -->
-                            <select id="selectEmployee" >
-                                <option value="-1" disabled selected>Odaberite clana tima...</option>                                
+                            <select id="selectEmployee" class="custom-select mb-1">
+                                <option value="-1" disabled selected>Odaberite člana tima...</option>                                
                             </select>
 
                             <div class="table-responsive">
@@ -310,7 +316,7 @@
                                 <button type="button" class="btn btnModal text-light font-weight-bold">DODAJ USLUGU</button>
                                 </p>
                                 <p>
-                                <button type="button" class="btn btnModal text-light font-weight-bold">PRONAĐI TERMIN</button>
+                                <button id="findFreePeriod" type="button" class="btn btnModal text-light font-weight-bold">PRONAĐI TERMIN</button>
                                 </p>
                             </div>
 
