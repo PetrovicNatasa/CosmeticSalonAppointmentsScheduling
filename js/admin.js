@@ -8,5 +8,11 @@ $(document).ready(() => {
         let employeesJson = $('#employees').val().trim();
         localStorage.setItem('employees', employeesJson);
     });
-    
+
+    $('#saveWorkingHoursBtn').click(() => {
+        let workingHoursJson = $('#workingHours').val().trim();
+        localStorage.setItem('workingHours', workingHoursJson);
+    });
+        
 });
+

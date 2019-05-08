@@ -7,8 +7,8 @@
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <!-- fontawesome -->
         <link rel="stylesheet" href="css/all.css">
-        <link href="fonts/dancingScript.css" rel="stylesheet">
         <link href="fonts/courgette.css" rel="stylesheet">
+        <link href="fonts/quattrocentoSans.css" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
         <title>Cenovnik</title>
         <link rel="shortcut icon" type="image/png" href="images/beauty.png" />
@@ -19,7 +19,7 @@
         <nav id="mainNavBar" class="navbar navbar-expand-md navbar-dark fixed-top borderBottom">
 
             <div class="navbar-header">
-                <a href="home.html" class="navbar-brand font-weight-bold m-0 text-light logo">
+                <a href="index.html" class="navbar-brand font-weight-bold m-0 text-light logo">
                     salon lepote La<i class="fas fa-heart pinkTulip"></i>Belle
                 </a>
             </div>
@@ -31,7 +31,7 @@
             <div id="myNavbar" class="collapse navbar-collapse justify-content-end">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link text-light font-weight-bold mr-1 navbarLink" href="home.html">HOME</a>
+                        <a class="nav-link text-light font-weight-bold mr-1 navbarLink" href="index.html">HOME</a>
                     </li>
                     <li class="nav-item dropdown py-0" data-toggle="dropdown">
                         <a class="nav-link text-light font-weight-bold dropdown-toggle mr-1 navbarLink"
@@ -40,12 +40,6 @@
                         </a>
                         <ul id="priceListMenu" class="dropdown-menu py-0"></ul>
                     </li>
-                    <!-- <li class="nav=item">
-                                <a class="nav-link text-light font-weight-bold mr-1 navbarLink" href="#">AKCIJA</a>
-                        </li> -->
-                    <li class="nav=item">
-                        <a class="nav-link text-light font-weight-bold mr-1 navbarLink" href="gallery.html">GALERIJA</a>
-                    </li>
                     <li class="nav=item">
                         <a href="#" data-toggle="modal" data-target="#bookNow"
                             class="nav-link text-light text-truncate font-weight-bold mr-1 book">
@@ -53,11 +47,9 @@
                         </a>
                     </li>
                     <li class="nav=item">
-                        <a class="nav-link text-light font-weight-bold mr-1 navbarLink" href="#">KONTAKT</a>
+                        <a class="nav-link text-light font-weight-bold mr-1 navbarLink" href="index.html#kontakt">KONTAKT</a>
                     </li>
                 </ul>
-
-
             </div>
         </nav>
         
@@ -74,20 +66,20 @@
             <div class="container">
                 <div class="row">
                     <div class="col text-center">
-                        <h1 class="text-light font-weight-light laBelle">salon lepote La<i
-                                class="fas fa-heart pinkTulip"></i>Belle</p>
+                        <h1 class="text-light font-weight-light laBelle">
+                            salon lepote La<i class="fas fa-heart pinkTulip"></i>Belle
                         </h1>
                         <h3 class="text-muted font-weight-light font-italic mb-3 laBelle">
                             Posetite nas i uverite se u naš kvalitet!
                         </h3>
                         <div class="py-2">
-                            <a href="https://www.facebook.com/">
+                            <a href="https://www.facebook.com/" target="_blank">
                                 <i class="fab fa-facebook fa-2x mx-3 text-primary"></i>
                             </a>
-                            <a href="https://twitter.com/?lang=sr">
-                                <i class="fab fa-twitter fa-2x mx-3 text-info"></i>
+                            <a href="https://www.instagram.com/" target="_blank">
+                                <i class="fab fa-instagram fa-2x mx-3"></i>
                             </a>
-                            <a href="https://www.youtube.com/">
+                            <a href="https://www.youtube.com/" target="_blank">
                                 <i class="fab fa-youtube fa-2x mx-3 text-danger"></i>
                             </a>
                         </div>
@@ -97,7 +89,7 @@
                         </p>
                     </div>
                 </div>
-
+        
             </div>
         </footer>
 
@@ -107,7 +99,7 @@
                 <div class="modal-content">
                     <div class="modal-header turqoise">
                         <h4 class="modal-title">
-                            <a href="home.html" class="navbar-brand font-weight-bold m-0 text-light laBelle logo">
+                            <a href="index.html" class="navbar-brand font-weight-bold m-0 text-light laBelle logo">
                                 salon lepote La<i class="fas fa-heart pinkTulip"></i>Belle
                             </a>
                         </h4>
@@ -115,6 +107,7 @@
                     </div>
         
                     <div class="modal-body">
+        
                         <form id="loginForm">
                             <div class="form-group">
                                 <label for="usernameEmail">Korisničko ime ili e-mail</label>
@@ -170,13 +163,12 @@
                         </form>
         
                         <form id="actions" class="hide">
-                            <p class="signInClient text-center"></p>
+                            <p class="signInClient text-center font-weight-bold"></p>
                             <div class="text-center">
                                 <p>
-                                    <button type="button" id="myTermsBtn" class="btn btnModal text-light font-weight-bold">MOJI
-                                        TERMINI</button>
+                                    <button type="button" id="myTermsBtn"
+                                        class="btn btnModal text-light font-weight-bold mb-3">MOJI TERMINI</button>
                                 </p>
-        
                                 <p>
                                     <button type="button" id="bookBtn" class="btn btnModal text-light font-weight-bold">BOOK
                                         NOW</button>
@@ -187,62 +179,54 @@
                         <form id="bookForm" class="hide">
                             <i id="arrowLeft" class="fas fa-angle-left fa-2x"></i>
                             <p class="signInClient text-center"></p>
-                            <label for="datePicker"></label>
-                            <input id="datePicker" class="far fa-calendar-alt" type="text">
-                            <!-- <i class="far fa-calendar-alt"></i>  --><br>
-                            <select id="selectService">
-                                <option value="-1" disabled selected>Izaberite uslugu...</option>
+        
+                            <div class="row">
+                                <div class="col">
+                                    <input type="text" id="startDatePicker" class="form-control mb-1"
+                                        placeholder="&#128198;Početni datum" data-toggle="tooltip"
+                                        title="Ovo je početni datum od kojeg će vam biti ispisani slobodni termini">
+                                </div>
+                                <div class="col">
+                                    <input type="text" id="endDatePicker" class="form-control mb-1"
+                                        placeholder="&#128198;Krajnji datum" data-toggle="tooltip"
+                                        title="Ovo je krajnji datum do kojeg će vam biti ispisani slobodni termini">
+                                </div>
+                            </div>
+        
+                            <select id="selectService" class="custom-select mb-1">
+                                <option value="-1" selected>Izaberite uslugu...</option>
                             </select> <br>
         
-                            <!-- biranje frizera, kozmeticara treba da bude disabled dok se ne izabere usluga!!! -->
-                            <select id="selectEmployee">
-                                <option value="-1" disabled selected>Odaberite clana tima...</option>
+                            <select id="selectEmployee" class="custom-select mb-1">
+                                <option value="-1" selected>Odaberite člana tima...</option>
                             </select>
         
                             <div class="table-responsive">
                                 <table class="table">
-                                    <tr>
-                                        <td>Usluga</td>
-                                        <td>Član tima</td>
-                                        <td>Cena</td>
-                                        <td></td>
-                                    </tr>
+                                    <thead>
+                                        <tr>
+                                            <th>Usluga</th>
+                                            <th>Datum</th>
+                                            <th>Rezerv.<br>od</th>
+                                            <th>Rezerv.<br>do</th>
+                                            <th>Član tima</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="reservationsTbody"></tbody>
                                 </table>
                             </div>
         
-                            <!-- dinamicka tabela gde ce se ispisivati usluge koje klijent bira, sa mogucnoscu da obrise uslugu -->
-        
-        
-                            <div class="text-right">
-                                <p>
-                                    <button type="button" class="btn btnModal text-light font-weight-bold">DODAJ USLUGU</button>
-                                </p>
-                                <p>
-                                    <button type="button" class="btn btnModal text-light font-weight-bold">PRONAĐI
-                                        TERMIN</button>
-                                </p>
+                            <div class="my-2 text-right">
+                                <button id="findFreePeriod" type="button"
+                                    class="btn btnModal text-light font-weight-bold">PRONAĐI TERMIN</button>
                             </div>
         
-        
                         </form>
         
-                        <form class="hide">
-                            <!-- kad se klikne 'PRONADJI TERMIN' -->
-                            <!-- treba da se pojavi kalendar sa slobodnim terminima -->
-                        </form>
-        
-                        <form class="hide">
-                            <p id="choosenDate"></p>
-                            <div id="choosenServices"></div>
-                            <p id="total"></p>
-                            <button type="button">POTVRDI</button>
-                        </form>
-        
-                        <form class="hide">
-                            <p>Vidimo se u salonu La Belle <span>neki datum</span></p>
-                            <div id="bookingTerms"></div>
-                            <!-- sa mogucnoscu da se izbrisu zakazani termini -->
-                        </form>
+                        <div class="table-responsive">
+                            <table id="availabilityTable" class="table table-fixed"></table>
+                        </div>
         
                     </div>
         

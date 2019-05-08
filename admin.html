@@ -12,22 +12,41 @@
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
         <title>Admin</title>
-        <!-- <link rel="shortcut icon" type="image/png" href="images/beauty.png" /> -->
+        <link rel="shortcut icon" type="image/png" href="images/beauty.png" />
     </head>
 
     <body>
-        <fieldset>
-            <legend>Unos usluga:</legend>
-            <textarea name="services" id="services" cols="100" rows="30" placeholder="Unesite usluge u JSON formatu"></textarea>
-            <button type="button" id="saveServicesBtn">Sačuvaj</button>
-        </fieldset>
+        <form>
+            <div class="form-group mb-4">
+                    <label for="services" class="font-weight-bold">Unos usluga:</label>
+                    <textarea name="services" id="services" class="form-control mb-2" rows="20" id="comment" placeholder="Unesite usluge u JSON formatu"></textarea>
+                    <div class="text-center">
+                        <button type="button" id="saveServicesBtn" class="btn btn-outline-secondary">Sačuvaj</button> 
+                    </div>
+            </div>
+        </form>
+        
+        <form>
+            <div class="form-group mb-4">
+                <label for="employees" class="font-weight-bold">Unos zaposlenih:</label>
+                <textarea name="employees" id="employees" class="form-control mb-2" rows="20"
+                    placeholder="Unesite zaposlene u JSON formatu"></textarea>
+                <div class="text-center">
+                    <button type="button" id="saveEmployeesBtn" class="btn btn-outline-secondary">Sačuvaj</button>
+                </div>
+            </div>
+        </form>
+        
+        <form>
+            <div class="form-group mb-4">
+                    <label for="workingHours" class="font-weight-bold">Unos radnog vremena:</label>
+                    <textarea name="workingHours" id="workingHours" class="form-control mb-2" rows="20" placeholder="Unesite radno vreme u JSON formatu"></textarea>
+                    <div class="text-center">
+                        <button type="button" id="saveWorkingHoursBtn" class="btn btn-outline-secondary">Sačuvaj</button>
+                    </div>
+            </div>
+        </form>
 
-
-        <fieldset>
-            <legend>Unos zaposlenih:</legend>
-            <textarea name="employees" id="employees" cols="50" rows="10" placeholder="Unesite zaposlene u JSON formatu"></textarea>
-            <button type="button" id="saveEmployeesBtn">Sačuvaj</button>
-        </fieldset>
 
         <script src="js/jquery-3.3.1.min.js"></script>
         <script src="https://code.jquery.com/jquery-1.12.4.js"></script>

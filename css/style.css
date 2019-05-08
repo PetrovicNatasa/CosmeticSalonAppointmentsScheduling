@@ -1,9 +1,12 @@
 /* 
 #5BC8AC  -   turqoise
 #98DBC6  -  aquamarine
-#E6D72A  -  canary yellow
+##f1e98d  -  canary yellow
 #F18D9E  -  pink tulip
 */
+* {
+    font-family: 'Quattrocento Sans', sans-serif;
+}
 
 #mainNavBar {
     background-color: #5BC8AC;
@@ -18,7 +21,6 @@
 }
 
 .logo {
-    /* font-family: 'Dancing Script', cursive; */
     font-family: 'Courgette', cursive;
     font-size: 21px;
     word-spacing: 10px;
@@ -73,7 +75,6 @@
 }
 
 .laBelle {
-    /* font-family: 'Dancing Script', cursive; */
     font-family: 'Courgette', cursive;
 }
 
@@ -132,7 +133,20 @@ tr {
 
 tr:hover {
     background-color: #f1e98d;
+}
 
+.table-fixed tbody {
+    height: 230px;
+    overflow-y: auto;
+    width: 100%;
+}
+
+#availabilityTable tbody tr :hover {
+    cursor: pointer;
+}
+
+i.fa.fa-trash {
+    cursor: pointer;
 }
 
 @-webkit-keyframes custom-shake{3%{-webkit-transform:translate(-3px) rotate(-3deg)}6%{-webkit-transform:translate(3px) rotate(3deg)}9%{-webkit-transform:translate(-3px) rotate(-3deg)}12%{-webkit-transform:translate(3px) rotate(3deg)}15%{-webkit-transform:translate(-3px) rotate(-3deg)}18%{-webkit-transform:translate(3px) rotate(3deg)}0%,21%,to{-webkit-transform:translate(0) rotate(0deg)}}@keyframes custom-shake{3%{-webkit-transform:translate(-3px) rotate(-3deg);transform:translate(-3px) rotate(-3deg)}6%{-webkit-transform:translate(3px) rotate(3deg);transform:translate(3px) rotate(3deg)}9%{-webkit-transform:translate(-3px) rotate(-3deg);transform:translate(-3px) rotate(-3deg)}12%{-webkit-transform:translate(3px) rotate(3deg);transform:translate(3px) rotate(3deg)}15%{-webkit-transform:translate(-3px) rotate(-3deg);transform:translate(-3px) rotate(-3deg)}18%{-webkit-transform:translate(3px) rotate(3deg);transform:translate(3px) rotate(3deg)}0%,21%,to{-webkit-transform:translate(0) rotate(0deg);transform:translate(0) rotate(0deg)}}.animation-shake{animation:custom-shake 6s ease-in-out 3s infinite;}.animation-shake:hover{-webkit-animation:none;animation:none}
